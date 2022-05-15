@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import configparser
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,7 @@ SECRET_KEY = 'a75g3+v&6d2cja7ds#0l4w)p2e0doh3rc9ru=p^rf#caxs#911'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -38,8 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chat',
+    'corsheaders',
+    'core',
     'rest_framework',
-    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -77,10 +79,18 @@ WSGI_APPLICATION = 'dispo_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+config = configparser.ConfigParser()
+config.readfp(open(r'dispo.config'))
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config.get('database-config', 'name'),
+        'USER': config.get('database-config', 'username'),
+        'PASSWORD': config.get('database-config', 'password'),
+        'HOST': '',
+        'PORT': '',
+        'OPTIONS': {'charset': 'utf8mb4'}
     }
 }
 
@@ -103,13 +113,19 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'core.UserProfile'
+
 
 # Internationalization
-# https://docs.djangoproject.com/en/2.1/topics/i18n/
+# https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+LANGUAGES = [
+    ('en', 'English'),
+]
+
+TIME_ZONE = 'Asia/Manila'
 
 USE_I18N = True
 
@@ -122,6 +138,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 
 CORS_ALLOWED_ORIGINS = [
