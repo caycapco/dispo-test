@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dispotest-fckx",
+  "private_key_id": "a6d19ba265d2d46681b33bb3981440a27a47e343",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdPFRC2jqUf/wF\nN/z/N07D4T+9tj7jUi3S9vXm/IcUdlWNpqFr5dgywDXwBdj58c1P/9sOHhcumrRz\nCfkQA8dnSAkbe/X1ZtewN6U98/JmkDSHkGo5EQHbI2oces5HazT/oz8CSc5wJREQ\nEk4ANJ8rTCV9Bp2QBrDabY8g/zChuaaDq7QaSHSRqGkh4+el9HXlxhLpHIu06Xzw\nOYqdXj44uZ+KecJpbT1znDNmA423Ybjcelqys7khxdTcfuAx/T4dho/5j/Vz45jI\nxXjfrac92SREYn2W0d2EmW3DcShSUkW72pvriea/XGPkzKWals2J/Wxps7MN2fn9\nDqUkYQ35AgMBAAECggEAOHiUR4Y9yrcKhOiAL0MWW2CNLScuUUciREXeicnuzvXP\nq7sbXBfMwlOW0QAlHNOwZRm5eBaNM0uxAOZMSV61kPLtxDK1myDXsHbbun8g4jYv\n+mSOAKgLMb0N8lwUeF1wp0orpLFjPPPxMYmCmIHWGS60KQA9yswya2bo0HLjHnxz\n1HIeW1mOwiI4pZdxgJ5nO95XctkemqbCypP5/K8ZHPhU1yldnsVS17VBt/akTA8W\nbVnySPKqvQJ2B9W1BSG8NF1+QVa1DUfWvY9xajygWaoDyOrw1u5P1rEqKzegfOa7\n9/RejL8OwSxI9BrM+8HbA7hr9gZNmp4kVv+D7aZfswKBgQD6EQ6Nx6BdLtHeEo8h\ngh44hKZZigG+Ns5yOnyUKif0K6SCsMf1FYwtUBZizyVwEaeZJ3pZMTJb8kAVqJzm\nQ4jxV4apam1BRY9BjZ4mr0NIF+hb1kuPFDfSUbQtDyPms5iQGoMHYnf7jnHBIpfs\nYSAeBzC1PhRg7ZlubaY5cqK/0wKBgQDifCYITGYeFAy6RfB3sdg3VJjaGDQtGl5y\nHcPurG31NX/HcXQWZgG18t9LO9DKVWMKg1Pjb8jxJlpO3WSVedUIueJTRptDqgjl\nQRK5KWnlXFaDC9bkMp/wYzM5jUYnCbMAQtzLcwQzCUPpsNU478fy/zst1w9yEKWP\n+RgcSIlngwKBgQCzPYygBWmlwQx+z/C2BO0id7pAzdHoBKK/b7qh/QF8W9fkMVBy\nFIrQY+pX0sCz7oOiHJDu43uEOkTDAYPM7LV4v9LvFjDPq0s+ooKsmc1xHGnZgeXQ\n3Z4Ra6zo60RBdZOyHr6yiVsU/Yn99IzOyuNZgq/gCWpT+5qRc5jE7q1HLwKBgQC3\nHiGx+/Nkxlk0EnBGlqh2tBOR4pftD7DlG2Pbidatt7/EhdqScY9YiTI5Jfe+YCNf\n0Kb28N7K+3Nw6Ff28zZng8OWCTRoFQZ0NZTp2K4iH/JiqiPpBXWDavFzyuG5loH/\n6A+U/z2Z9hfOzobXLifANNSoT4XRd9wk+AWieJN/+QKBgBVzAYA4hD0l7BfdFpyJ\nU74JdRa6uvryWV/biDKlTKepNRZopSywWiyKEHF2nP8vaXNZwF6WoHylMtS2N7VJ\nGdepVWFp/vCVJP2JGcKUzb2Mv75elRXUc9b2g+06pLt/62daUwH/rLXUduBOXNya\n1t3if5vlMaTOJ5krzzIkoujI\n-----END PRIVATE KEY-----\n",
+  "client_email": "dispo-client@dispotest-fckx.iam.gserviceaccount.com",
+  "client_id": "102108749011369522707",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dispo-client%40dispotest-fckx.iam.gserviceaccount.com"
+}

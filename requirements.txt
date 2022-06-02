@@ -1,2 +1,5 @@
 djangorestframework
 django-cors-headers
+mysqlclient==2.0.1
+django-environ
+google-cloud-dialogflow
