@@ -23,12 +23,12 @@ def webhook(request):
         print(action)
 
         #get currently logged-in user
-        User = get_user_model()
-        print(request.user.fullname)
-        user_name = request.user.fullname
+        #User = get_user_model()
+        #print(request.user.fullname)
+        #user_name = request.user.fullname
 
         if(action == 'input.welcome'):
-            message = "Hi " + user_name +", I'm Dispo. How may I help you today?"
+            message = "Hi, I'm Dispo. How may I help you today?"
             responseObj = {
                 "fulfillmentText":  message,
                 # "fulfillmentMessages": [{"text": {"text": [message]}}],
