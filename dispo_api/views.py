@@ -7,6 +7,7 @@ import json
 import os
 #from google.cloud import dialogflow
 import google.cloud.dialogflow_v2 as dialogflow
+from django.contrib.auth import get_user_model
 
 @csrf_exempt
 def webhook(request):
@@ -21,14 +22,19 @@ def webhook(request):
         action = req.get('queryResult').get('action')
         print(action)
 
+        #get currently logged-in user
+        User = get_user_model()
+        print(request.user.fullname)
+        user_name = request.user.fullname
+
         if(action == 'input.welcome'):
-            message = "Hi, I'm Dispo. How may I help you today?"
+            message = "Hi " + user_name +", I'm Dispo. How may I help you today?"
             responseObj = {
                 "fulfillmentText":  message,
                 # "fulfillmentMessages": [{"text": {"text": [message]}}],
                 "source": ""
             }
-            
+
         print(responseObj)
 
         return JsonResponse(responseObj)
