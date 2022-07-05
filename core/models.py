@@ -40,3 +40,13 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.email
+
+class Facility(models.Model):
+    name = models.CharField(max_length=32)
+    latitude = models.DecimalField(null=True,decimal_places=14,max_digits=17)
+    longitude = models.DecimalField(null=True,decimal_places=14,max_digits=17)
+    class Meta:
+        verbose_name_plural = 'Facilities'
+
+
+
