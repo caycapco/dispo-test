@@ -1,5 +1,8 @@
-djangorestframework
-django-cors-headers
-mysqlclient==2.0.1
-django-environ
-google-cloud-dialogflow
+Django==4.0.6
+djangorestframework==3.13.1
+djangorestframework-simplejwt==5.2.0
+django-cors-headers==3.13.0
+django-filter==22.1
+django-environ==0.9.0
+mysqlclient==2.1.1
+google-cloud-dialogflow==2.15.0

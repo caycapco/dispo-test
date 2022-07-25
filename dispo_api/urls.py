@@ -5,10 +5,12 @@ from dispo_api import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
     path('chat/', include('chat.urls')),
     path('webhook', views.webhook, name='webhook'),
     path('auth/', include('auth.urls')),
-    path('send_message/', views.send_message, name='send_message'),
+    path('send_message/', views.send_message, name='send_message'),      
+    path('api/', include('core.urls')),
 
     #path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     #path('api/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
